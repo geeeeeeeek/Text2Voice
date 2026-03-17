@@ -78,7 +78,7 @@
         <!-- 加载提示 -->
         <div id="loading" class="loading" style="display: none;">
             <div class="spinner"></div>
-            <p>正在合成语音，请稍候...</p>
+            <p>正在生成语音，请稍候...</p>
         </div>
 
         <!-- 错误提示 -->
@@ -96,31 +96,84 @@
         <!-- 使用说明 -->
         <div class="instructions">
             <h3>使用说明</h3>
-            <ul>
-                <li>在文本框中输入要转换的文字内容（支持中文、英文、日文、韩文等）</li>
-                <li>选择目标语言和喜欢的语音角色</li>
-                <li>调节语速和音调参数（可选）</li>
-                <li>点击"开始转换"按钮生成语音</li>
-                <li>转换完成后可在线播放或下载 MP3 文件</li>
-            </ul>
-            <div class="api-notice">
-                <strong>提示：</strong>请使用 <code>python server.py</code> 启动本地服务（需先安装依赖：<code>pip install flask edge-tts</code>）。如服务端不可用，将自动切换到浏览器内置语音引擎。
+            <div class="steps-list">
+                <div class="step-item">
+                    <span class="step-number">1</span>
+                    <div class="step-content">
+                        <strong>输入文本</strong>
+                        <p>在文本框中输入要转换的文字内容，支持中文、英文、日文、韩文等多种语言</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <span class="step-number">2</span>
+                    <div class="step-content">
+                        <strong>选择语音</strong>
+                        <p>选择目标语言和喜欢的语音角色，可按需调节语速和音调参数</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <span class="step-number">3</span>
+                    <div class="step-content">
+                        <strong>开始转换</strong>
+                        <p>点击"开始转换"按钮，系统将自动合成语音</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <span class="step-number">4</span>
+                    <div class="step-content">
+                        <strong>播放或下载</strong>
+                        <p>转换完成后可在线播放试听，也可下载 MP3 文件保存到本地</p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- 常见问题 -->
-        <div class="instructions">
+        <div class="faq-section">
             <h3>常见问题</h3>
-            <ul>
-                <li>xxxxxxxxx</li>
-                <li>xxxxxxxxx</li>
-                <li>xxxxxxxxx</li>
-            </ul>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>支持哪些语言和语音角色？</summary>
+                    <div class="faq-answer">
+                        <p>本工具基于 Microsoft Edge TTS 技术，支持中文（普通话、粤语）、英语、日语、韩语、法语、德语、西班牙语等数十种语言，每种语言提供多个语音角色可供选择，包括男声和女声。</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>转换后的音频是什么格式？</summary>
+                    <div class="faq-answer">
+                        <p>转换后的音频为 MP3 格式，可直接在线播放或下载保存到本地设备，兼容所有主流播放器和设备。</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>文本长度有限制吗？</summary>
+                    <div class="faq-answer">
+                        <p>单次转换支持最多 1000 个字符。如果您的文本较长，建议分段进行转换。</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>为什么语音听起来不自然？</summary>
+                    <div class="faq-answer">
+                        <p>请尝试以下方法改善效果：选择与文本语言匹配的语音角色；适当调整语速和音调参数；确保文本中的标点符号使用正确，这会影响语音的停顿和语气。</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>浏览器内置语音和 Edge TTS 有什么区别？</summary>
+                    <div class="faq-answer">
+                        <p>Edge TTS 是微软提供的云端语音合成服务，音质更自然、语音角色更丰富，需要启动本地服务端。浏览器内置语音（Web Speech API）无需服务端，但音质和可用语音取决于您的操作系统和浏览器，效果可能有所差异。</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>这个工具免费吗？数据是否安全？</summary>
+                    <div class="faq-answer">
+                        <p>本工具完全免费使用。文本数据仅用于语音合成，不会被存储或用于其他用途。使用本地服务端模式时，所有处理都在您的设备上完成。</p>
+                    </div>
+                </details>
+            </div>
         </div>
 
         <footer>
             <p>语音技术：Microsoft Edge TTS</p>
-            <p>&copy; 2025 文本转语音在线工具 | <a href="about.html">关于我们</a> | <a href="privacy.html">隐私政策</a></p>
+            <p>&copy; 2026 文本转语音在线工具 | <a href="about.html">关于我们</a> | <a href="privacy.html">隐私政策</a></p>
         </footer>
     </div>
 
