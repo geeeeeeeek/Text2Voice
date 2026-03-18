@@ -26,8 +26,8 @@ except ImportError:
     print("请运行: pip install edge-tts")
     sys.exit(1)
 
-# 静态文件目录为脚本所在目录
-STATIC_DIR = os.path.dirname(os.path.abspath(__file__))
+# 静态文件目录限定为 web 子目录，防止源码等文件被访问
+STATIC_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "web")
 
 # 限制配置
 MAX_TEXT_LENGTH = 1000

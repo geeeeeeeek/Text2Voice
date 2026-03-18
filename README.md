@@ -127,6 +127,13 @@ Microsoft Edge TTS 服务
 
 ## 生产环境部署
 
+
+启动服务
+
+```linux
+ nohup python3.8 server.py > server.log 2>&1 &
+```
+
 ### 使用 Nginx 反向代理
 
 ```nginx
