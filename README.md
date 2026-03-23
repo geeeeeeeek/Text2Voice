@@ -156,3 +156,4 @@ Microsoft Edge TTS 服务
 ## 参考资料
 
 - [文本转语音工具](https://my-web-tool-1f793.web.app/)
+- [文本转语音AI工具](text2-voice.vercel.app)
